@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Multimedia Video - HTML</h2>
+    <p>
+        <button onclick="playVid()" type="button">Play Video</button>
+        <button onclick="pauseVid()" type="button">Pause Video</button> 
+        <button onclick="durationVid()" type="button">Durasi Video</button>
+        <button onclick="controlsOn()" type="button">Controls On</button>
+        <button onclick="controlsOff()" type="button">Controls Off</button>
+        <button onclock="loopStatus()" type="button">Loop Status</button>
+    </p>
+
+<video controls id="myVideo" width="320" height="240" autoplay>
+    <source src="mov_bbb.mp4" type="video/mp4"> 
+    my video    
+</video>
+</body>
+<script>
+    var vid = document.getElementById("myVideo");
+    
+    function playVid() {
+        vid.play();
+    }
+
+    function pauseVid() {
+        vid.pause();
+    }
+    function durationVid() {
+        alert(vid.duration);
+    }
+    function controlsOn() {
+        vid.controls();
+    } 
+    function controlsOff() {
+        vid.controls();
+    }
+    function loppStatus() {
+        alert(vid.loop);
+    }
+    
+</script>
+</html>
