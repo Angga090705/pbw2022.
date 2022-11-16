@@ -1,0 +1,15 @@
+. textin{
+    font-size: 20px;
+} 
+
+input[type=text] {
+    background: bisque;
+    color: azure;
+    padding: 10px;
+    border: 2px solid darkgreen;
+}
+
+input[placeholder] {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: brown;
+}
